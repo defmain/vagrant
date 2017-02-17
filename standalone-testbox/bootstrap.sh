@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt-get --yes update > /dev/null
-sudo apt-get --yes upgrade > /dev/null
+sudo apt-get --yes update >/dev/null 2>&1
+sudo apt-get --yes upgrade >/dev/null 2>&1
 sudo apt-get --yes install vim tmux curl wget git
 
 # Add my .vimrc
