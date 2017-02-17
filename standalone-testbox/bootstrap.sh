@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get --yes update >/dev/null 2>&1
 sudo apt-get --yes upgrade >/dev/null 2>&1
-sudo apt-get --yes install vim tmux curl wget git
+sudo apt-get --yes install vim tmux curl wget git > /dev/null 2>&1
 
 # Add my .vimrc
 su vagrant -c "echo 'syntax on' >> ~/.vimrc"
